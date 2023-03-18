@@ -2,6 +2,7 @@
 <html>
 <head> 
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/index.js" defer></script>
     <title>den bästa pojken</title>
 </head>
 <body>
@@ -9,16 +10,16 @@
     <hr>
     <button onclick="clickMe()">Ja</button>
     <p>Fuck mina ops mannen!!</p>
-    <section aria-label="Cool Photos">
-        <div class="carousel">
-            <button class="carousel-button prev">&#10498;</button>
-            <button class="carousel-button next">&#10499;</button>
-            <ul>
+    <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#10498;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#10499;</button>
+            <ul data-slides>
                 <li class="slide" data-active=>
-                    <img src="assets/felix telephone.jpg" alt="Felix Nword Image #1">
+                    <img src="assets/felix telephone.jpg" alt="Phone Charge Image #1">
                 </li>
                 <li class="slide">
-                    <img src="assets/felixmeme.png" alt="Felix lasagne Image #2">
+                    <img src="assets/felixmeme.png" alt="felix Nword Image #2">
                 </li>
                 <li class="slide">
                     <img src="assets/realm ryal.jpg" alt="realm ryal Image #3">
@@ -26,6 +27,5 @@
             </ul>
         </div>
     </section>
-    <script src="js/index.js" defer></script>
 </body>
 </html>
